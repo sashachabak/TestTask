@@ -10,7 +10,7 @@ public enum Colors {
     ORANGE,
     GREY;
     private static final SecureRandom random = new SecureRandom();
-    static Colors getRandomColor () {
+    public static Colors getRandomColor () {
         int x = random.nextInt(Colors.class.getEnumConstants().length);
         return Colors.class.getEnumConstants()[x];
     }

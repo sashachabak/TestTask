@@ -26,7 +26,7 @@ class Square extends Shape {
     private double side;
 
     Square(double side) {
-        super(Colors.YELLOW.name());
+        super(Colors.getRandomColor().name());
         this.side = side;
     }
     public double getSide() {
@@ -47,7 +47,7 @@ class Circle extends Shape {
     private double radius;
 
     Circle (double radius) {
-        super(Colors.BLUE.name());
+        super(Colors.getRandomColor().name());
         this.radius = radius;
     }
 
@@ -72,7 +72,7 @@ class Triangle extends Shape {
     private double katet1, katet2, hipotenuse;
 
     public Triangle(double katet1, double katet2) {
-        super(Colors.BLUE.name());
+        super(Colors.getRandomColor().name());
         this.katet1 = katet1;
         this.katet2 = katet2;
         this.hipotenuse = Math.sqrt(Math.pow(katet1, 2) + Math.pow(katet2, 2));
@@ -99,7 +99,7 @@ class Trapezoid extends Shape {
     double side1, side2, h;
 
     Trapezoid(double side1, double side2, double h) {
-        super(Colors.BLUE.name());
+        super(Colors.getRandomColor().name());
         this.side1 = side1;
         this.side2 = side2;
         this.h = h;
